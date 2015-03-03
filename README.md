@@ -1,6 +1,6 @@
 # stylus-autocompile package
 
-Auto compile Stylus file on save.
+Auto compile Stylus file on save. Fork of [less-autocompile](https://github.com/Azakur4/less-autocompile)
 
 ---
 
