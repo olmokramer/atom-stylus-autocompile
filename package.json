@@ -1,0 +1,18 @@
+{
+  "name": "stylus-autocompile",
+  "main": "./lib/stylus-autocompile",
+  "version": "0.3.3",
+  "description": "Auto compile Stylus.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olmokramer/atom-stylus-autocompile"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "mkdirp": "latest",
+    "stylus": "^0.50.0"
+  }
+}
