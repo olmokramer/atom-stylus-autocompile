@@ -23,5 +23,3 @@ main (string): path to your main Stylus file to be compiled
 ```
 // main: init.styl
 ```
-
-![](http://uppix.net/2pENDo.gif)
