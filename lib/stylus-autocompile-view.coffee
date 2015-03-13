@@ -1,7 +1,7 @@
 {View, $, $$} = require 'atom'
 
 module.exports =
-class LessAutocompileView extends View
+class StylusAutocompileView extends View
   @content: ->
     @div class: 'stylus-autocompile tool-panel panel-bottom hide', =>
       @div class: "inset-panel", =>
