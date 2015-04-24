@@ -1,25 +1,35 @@
-# stylus-autocompile package
+# stylus-autocompile
 
-Auto compile Stylus file on save. Fork of [less-autocompile](https://github.com/Azakur4/less-autocompile)
-
----
+Auto compile Stylus file on save. Fork of [less-autocompile](https://github.com/lohek/less-autocompile)
 
 Add the parameters on the first line of the Stylus file.
 
 ```
-out (string):  path of CSS file to create
-compress (bool): compress CSS file
-main (string): path to your main Stylus file to be compiled
+out       (string) : path of CSS file to create
+compress  (bool)   : compress CSS file
+sourcemap (bool)   : create a sourcemap for the file
+main      (string) : path to your main Stylus file to be compiled
 ```
 
-```
-// out: ../styles.css
+## Example
+
+stylus/main.styl
+
+```sass
+// out: ../css/style.css, sourcemap: true, compress: true
+
+@import "component/main.styl";
 ```
 
-```
-// out: ../styles.css, compress: true
+stylus/component/main.styl
+
+```sass
+// main: ../main.styl
+
+my-component {
+  height: 100px;
+  width: 100px;
+}
 ```
 
-```
-// main: init.styl
-```
+When saving either `stylus/main.styl` or `stylus.component/main.styl`, `stylus/main.styl` will be compiled and compressed and saved as `css/style.css` along with a sourcemap `css/style.css.map`
