@@ -1,7 +1,6 @@
 fs = require 'fs'
 path = require 'path'
-mkdirp   = require 'mkdirp'
-stylus = require 'stylus'
+[mkdirp, stylus] = []
 
 class StylusAutocompile
   activate: ->
@@ -35,6 +34,7 @@ class StylusAutocompile
       @render params, @activeEditor.getText()
 
   render: (params, source) ->
+    stylus ?= require 'stylus'
     renderer = stylus source
       .set 'paths', [path.dirname path.resolve params.file]
       .set 'filename', path.basename params.file
@@ -74,6 +74,7 @@ class StylusAutocompile
     serialized[0].replace(/^\/\/\s+/, '').replace(/\n/, '')
 
   writeFile: (filePath, content) ->
+    mkdirp ?= require 'mkdirp'
     dirPath = path.dirname filePath
     mkdirp dirPath, (err) =>
       if err

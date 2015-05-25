@@ -11,6 +11,9 @@
   "engines": {
     "atom": ">0.50.0"
   },
+  "activationCommands": {
+    "atom-text-editor[data-grammar~=\"source\"][data-grammar~=\"stylus\"]": [ "core:save" ]
+  },
   "dependencies": {
     "mkdirp": "latest",
     "stylus": "^0.51.0"
