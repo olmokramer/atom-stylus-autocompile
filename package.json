@@ -1,7 +1,7 @@
 {
   "name": "stylus-autocompile",
   "main": "./lib/stylus-autocompile",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Auto compile Stylus.",
   "repository": {
     "type": "git",
@@ -12,7 +12,9 @@
     "atom": ">0.50.0"
   },
   "activationCommands": {
-    "atom-text-editor[data-grammar~=\"source\"][data-grammar~=\"stylus\"]": [ "core:save" ]
+    "atom-text-editor[data-grammar~=\"source\"][data-grammar~=\"stylus\"]": [
+      "core:save"
+    ]
   },
   "dependencies": {
     "mkdirp": "latest",
