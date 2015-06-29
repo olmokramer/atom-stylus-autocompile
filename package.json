@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "mkdirp": "latest",
-    "stylus": "^0.51.0"
+    "stylus": "^0.51.0",
+    "nib": "latest"
   }
 }

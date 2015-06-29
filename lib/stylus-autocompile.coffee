@@ -1,6 +1,6 @@
 fs = require 'fs'
 path = require 'path'
-[mkdirp, stylus] = []
+[mkdirp, stylus, nib] = []
 
 class StylusAutocompile
   activate: ->
@@ -41,6 +41,11 @@ class StylusAutocompile
       .set 'sourcemap', params.sourcemap
       .set 'compress', params.compress
 
+    if params.nib
+      nib ?= require 'nib'
+      renderer.use nib()
+      renderer.import 'nib'
+
     renderer.render (err, css) =>
       if err?
         atom.notifications.addError err.message,
@@ -66,6 +71,7 @@ class StylusAutocompile
 
     params.compress = @parseBoolean params.compress
     params.sourcemap = @parseBoolean params.sourcemap
+    params.nib = @parseBoolean params.nib
     return params if params.out or params.main
 
   getSerializedParams: (fileContent) ->
