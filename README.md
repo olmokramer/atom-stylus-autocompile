@@ -8,6 +8,7 @@ Add the parameters on the first line of the Stylus file.
 out       (string) : path of CSS file to create
 compress  (bool)   : compress CSS file
 sourcemap (bool)   : create a sourcemap for the file
+nib       (bool)   : use and import nib (cross-browser CSS3 mixins)
 main      (string) : path to your main Stylus file to be compiled
 ```
 
@@ -16,7 +17,7 @@ main      (string) : path to your main Stylus file to be compiled
 stylus/main.styl
 
 ```sass
-// out: ../css/style.css, sourcemap: true, compress: true
+// out: ../css/style.css, sourcemap: true, compress: true, nib: true
 
 @import "component/main.styl";
 ```
