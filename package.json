@@ -19,5 +19,9 @@
   "dependencies": {
     "mkdirp": "latest",
     "stylus": "^0.51.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.3",
+    "eslint": "^1.6.0"
   }
 }
