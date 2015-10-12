@@ -12,9 +12,9 @@ Add the parameters on the first line of the Stylus file.
 | nib <sup><a href="#note2">2</a></sup> | bool | enable the use of the nib library in stylus |
 | main <sup><a href="#note1">1</a></sup> | string | path to your main stylus file to be compiled |
 
-<sup id="note1"><a href="#note1">1</a></sup> The paths are relative to the stylus file. If both an `out` and a `main` field are defined, both the current file and the main file are compiled and stored in their respective `out`
+<sup id="note1"><a href="#note1">1</a></sup> The paths are relative to the stylus file. If both an `out` and a `main` field are specified, both the current file and the main file are compiled and stored in their respective `out`
 
-<sup id="note2"><a href="#note2">2</a></sup> The `compress`, `sourcemap` and `nib` fields don't have any effect when no `out` field is defined.
+<sup id="note2"><a href="#note2">2</a></sup> The `compress`, `sourcemap` and `nib` fields don't have any effect when no `out` field is specified.
 
 ## Example
 
