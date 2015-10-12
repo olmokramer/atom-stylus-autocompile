@@ -18,8 +18,8 @@
   },
   "dependencies": {
     "mkdirp": "latest",
-    "stylus": "^0.51.0",
-    "nib": "latest"
+    "nib": "latest",
+    "stylus": "latest"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.3",
