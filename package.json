@@ -16,6 +16,13 @@
       "core:save"
     ]
   },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
   "dependencies": {
     "mkdirp": "latest",
     "nib": "latest",
