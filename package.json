@@ -1,7 +1,7 @@
 {
   "name": "stylus-autocompile",
   "main": "./lib/stylus-autocompile",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Auto compile Stylus.",
   "repository": {
     "type": "git",
