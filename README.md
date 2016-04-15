@@ -16,6 +16,8 @@ Add the parameters on the first line of the Stylus file.
 
 <sup id="note2"><a href="#note2">2</a></sup> The `compress`, `sourcemap` and `libs` fields don't have any effect when no `out` field is specified.
 
+If stylus is installed locally in the project of the current file, that version will be used. Otherwise Stylus autocompile falls back to a bundled version of stylus.
+
 ## Example
 
 main.styl
