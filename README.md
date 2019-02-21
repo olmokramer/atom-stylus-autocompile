@@ -1,3 +1,7 @@
+# Unmaintained
+
+This package is unmaintained. If you want to take over maintainance, please open an probleem and I'll try to transfer the repository to you soon.
+
 # stylus-autocompile
 
 Auto compile Stylus file on save. Fork of [less-autocompile](https://github.com/lohek/less-autocompile)
